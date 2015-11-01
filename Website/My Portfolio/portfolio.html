@@ -1,20 +1,47 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
-<head>
-	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
-	<title>jQuery Image Slider with Thumbnails, Bullets and Slideshow</title>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+	<head>
+		<title>My Portfolio</title>
+	</head>
 
-	<link rel="stylesheet" href="style.css" />
+	<body>
+		<div class="gallery" align="center">
+			<h3 style="color:#E5E4E2">My Portfolio</h3>
+			<div class="thumbnails">
+				<img onmouseover="preview.src=img1.src" name="img1" src="images/_4086408859.jpg" alt="" />
+				<img onmouseover="preview.src=img2.src" name="img2" src="images/_4114133353.jpg" alt="" />
+				<img onmouseover="preview.src=img3.src" name="img3" src="images/_6272988873.jpg" alt="" />
+				<img onmouseover="preview.src=img4.src" name="img4" src="images/_8101656709.jpg" alt="" />
+				<img onmouseover="preview.src=img5.src" name="img5" src="images/_8228137003.jpg" alt="" />
+				<img onmouseover="preview.src=img6.src" name="img6" src="images/_9109747714.jpg" alt="" />
+			</div>
+			<div class="preview" align="center">
+				<img name="preview" src="images/_4086408859.jpg" alt=""/>
+			</div>
 
-	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-	<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-</head>
+		</div> <!-- Close the gallery div -->
+		<style type="text/css">
+			body {
+				background: #222;
+				margin: 0;
+			}
+			.thumbnails img {
+				height: 80px;
+				border: 4px solid #555;
+				padding: 1px;
+				margin: 0 10px 10px 0;
+			}
 
-<body>
+			.thumbnails img:hover {
+				border: 4px solid #00ccff;
+				cursor:pointer;
+			}
 
-	<?php
-		$imagesTotal = 6;     // SET TOTAL IMAGES IN GALLERY
-	?>
-
-</body>
+			.preview img {
+				border: 4px solid #444;
+				padding: 1px;
+				width: 800px;
+			}
+		</style>
+	</body>
 </html>
