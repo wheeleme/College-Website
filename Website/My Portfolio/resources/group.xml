@@ -4,7 +4,7 @@
 		<identifier>bluefire.adobe.gallery1</identifier>
 		<thumbnailPath src='gallerythumb.jpg' />
 		<previewPath src='' />
-		<galleryName>My Portfolio_2</galleryName>
+		<galleryName>My Portfolio</galleryName>
 		<galleryDescription>My Photographs</galleryDescription>
 		<galleryVersion>1.0</galleryVersion>
 		<x:xmpmeta xmlns:x='adobe:ns:meta/' >
